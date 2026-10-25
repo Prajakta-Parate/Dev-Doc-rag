@@ -6,17 +6,17 @@ __pycache__/
 venv/
 env/
 
-# Secrets
+# Environment secrets
 .env
 .env.*
 !.env.example
 
-# Local databases and generated data
+# Local databases and generated vector data
 backend/data/chroma/
 *.db
 *.sqlite3
 
-# IDE and OS
+# IDE and operating system
 .vscode/
 .idea/
 .DS_Store
