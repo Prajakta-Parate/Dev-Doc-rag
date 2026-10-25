@@ -3,7 +3,10 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.getenv("DEVDOCS_API_URL", "http://localhost:8000")
+API_BASE_URL = st.secrets.get(
+    "API_BASE_URL",
+    os.getenv("API_BASE_URL", "http://localhost:8000")
+).rstrip("/")
 
 
 st.set_page_config(
