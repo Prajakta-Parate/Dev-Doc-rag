@@ -13,6 +13,8 @@ CHROMA_DIR = Path(
     )
 )
 
+CHROMA_DIR.mkdir(parents=True, exist_ok=True)
+
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
