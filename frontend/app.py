@@ -3,7 +3,7 @@ import os
 import requests
 import streamlit as st
 
-API_BASE_URL = st.secrets.get(
+API_URL = st.secrets.get(
     "API_BASE_URL",
     os.getenv("API_BASE_URL", "http://localhost:8000")
 ).rstrip("/")
